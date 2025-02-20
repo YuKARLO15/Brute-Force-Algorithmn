@@ -59,18 +59,23 @@ def knapsack(weights, values, capacity, n):
     return result
 
 # Example usage:
-arr = [1, 2, 3, 4, 5]
-target = 3
+print("Brute Force Algorithm")
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+target = 9
 print("Brute Force Search:", brute_force_search(arr, target))
+print("---------------------------------------------------------------------------------------------\n")
 
+print("Travelling Salesman Problem")
 graph = [[0, 10, 15, 20],
          [10, 0, 35, 25],
          [15, 35, 0, 30],
          [20, 25, 30, 0]]
 print("TSP Solution:", tsp(graph))
+print("---------------------------------------------------------------------------------------------\n")
 
-weights = [10, 20, 30]
-values = [60, 100, 120]
-capacity = 50
+print("Knapsack Problem")
+weights = [10, 20, 30, 40, 50]
+values = [60, 100, 120, 240, 150]
+capacity = 80
 n = len(weights)
 print("Knapsack Solution:", knapsack(weights, values, capacity, n))
